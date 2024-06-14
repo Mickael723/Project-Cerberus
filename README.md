@@ -1,6 +1,8 @@
 # Project-Cerberus
 This is my game that I'm developing. Currently working out the details!!
 
+It is going to be a character-based turn based rpg. Battles will use an action timer system. Players and Enemies can string together actions while their bar is going down to perform combos. 
+
 **Class Diagram:**
 
 
