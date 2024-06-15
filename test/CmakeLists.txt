@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/bin")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/src")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/src")
+
+include_directories(${CMAKE_SOURCE_DIR}/header)
+link_directories(${LIBRARY_OUTPUT_PATH})
+
+add_executable(runBattleTests
+  TestActionTimer.cpp
+)
+
+target_link_libraries(runBattleTests gmock gtest gtest_main)
+
+
+target_link_libraries(runBattleTests library)
