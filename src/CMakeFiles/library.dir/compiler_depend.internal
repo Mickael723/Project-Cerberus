@@ -3,7 +3,6 @@
 
 src/CMakeFiles/library.dir/ActionTimer.cpp.o
  /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTimer.cpp
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/share/asan_ignorelist.txt
  /Users/mickaelosegueda/Desktop/Project-Cerberus/header/ActionTimer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/chrono
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability

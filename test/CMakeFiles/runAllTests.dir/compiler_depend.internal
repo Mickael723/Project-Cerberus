@@ -3,7 +3,6 @@
 
 test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o
  /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestActionTimer.cpp
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/share/asan_ignorelist.txt
  /Users/mickaelosegueda/Desktop/Project-Cerberus/header/ActionTimer.h
  /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include/gtest/gtest.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef
@@ -482,7 +481,6 @@ test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o
 
 test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o
  /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestEntity.cpp
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/share/asan_ignorelist.txt
  /Users/mickaelosegueda/Desktop/Project-Cerberus/header/Entity.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config
