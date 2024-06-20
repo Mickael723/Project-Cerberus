@@ -5,7 +5,7 @@ add_subdirectory(googletest)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -g -fsanitize=address")
 
 include_directories(${CMAKE_SOURCE_DIR}/header)
 link_directories(${LIBRARY_OUTPUT_PATH})
