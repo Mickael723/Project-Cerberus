@@ -6,11 +6,19 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/src")
 include_directories(${CMAKE_SOURCE_DIR}/header)
 link_directories(${LIBRARY_OUTPUT_PATH})
 
-add_executable(runBattleTests
+add_executable(runAllTests
+  TestActionTimer.cpp
+  TestEntity.cpp
+)
+
+add_executable(runActionTimerTests
   TestActionTimer.cpp
 )
 
-target_link_libraries(runBattleTests gmock gtest gtest_main)
+add_executable(runEntityTests
+  TestEntity.cpp
+)
 
-
-target_link_libraries(runBattleTests library)
+target_link_libraries(runAllTests gmock gtest gtest_main library)
+target_link_libraries(runActionTimerTests gmock gtest gtest_main library)
+target_link_libraries(runEntityTests gmock gtest gtest_main library)

@@ -227,17 +227,43 @@ library/fast:
 .PHONY : library/fast
 
 #=============================================================================
-# Target rules for targets named runBattleTests
+# Target rules for targets named runAllTests
 
 # Build rule for target.
-runBattleTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runBattleTests
-.PHONY : runBattleTests
+runAllTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runAllTests
+.PHONY : runAllTests
 
 # fast build rule for target.
-runBattleTests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBattleTests.dir/build.make test/CMakeFiles/runBattleTests.dir/build
-.PHONY : runBattleTests/fast
+runAllTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
+.PHONY : runAllTests/fast
+
+#=============================================================================
+# Target rules for targets named runActionTimerTests
+
+# Build rule for target.
+runActionTimerTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runActionTimerTests
+.PHONY : runActionTimerTests
+
+# fast build rule for target.
+runActionTimerTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/build
+.PHONY : runActionTimerTests/fast
+
+#=============================================================================
+# Target rules for targets named runEntityTests
+
+# Build rule for target.
+runEntityTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runEntityTests
+.PHONY : runEntityTests
+
+# fast build rule for target.
+runEntityTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
+.PHONY : runEntityTests/fast
 
 # Help Target
 help:
@@ -256,7 +282,9 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... library"
-	@echo "... runBattleTests"
+	@echo "... runActionTimerTests"
+	@echo "... runAllTests"
+	@echo "... runEntityTests"
 .PHONY : help
 
 

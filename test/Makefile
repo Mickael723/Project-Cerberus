@@ -162,25 +162,54 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/runBattleTests.dir/rule:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runBattleTests.dir/rule
-.PHONY : test/CMakeFiles/runBattleTests.dir/rule
+test/CMakeFiles/runAllTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runAllTests.dir/rule
+.PHONY : test/CMakeFiles/runAllTests.dir/rule
 
 # Convenience name for target.
-runBattleTests: test/CMakeFiles/runBattleTests.dir/rule
-.PHONY : runBattleTests
+runAllTests: test/CMakeFiles/runAllTests.dir/rule
+.PHONY : runAllTests
 
 # fast build rule for target.
-runBattleTests/fast:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBattleTests.dir/build.make test/CMakeFiles/runBattleTests.dir/build
-.PHONY : runBattleTests/fast
+runAllTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
+.PHONY : runAllTests/fast
+
+# Convenience name for target.
+test/CMakeFiles/runActionTimerTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runActionTimerTests.dir/rule
+.PHONY : test/CMakeFiles/runActionTimerTests.dir/rule
+
+# Convenience name for target.
+runActionTimerTests: test/CMakeFiles/runActionTimerTests.dir/rule
+.PHONY : runActionTimerTests
+
+# fast build rule for target.
+runActionTimerTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/build
+.PHONY : runActionTimerTests/fast
+
+# Convenience name for target.
+test/CMakeFiles/runEntityTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runEntityTests.dir/rule
+.PHONY : test/CMakeFiles/runEntityTests.dir/rule
+
+# Convenience name for target.
+runEntityTests: test/CMakeFiles/runEntityTests.dir/rule
+.PHONY : runEntityTests
+
+# fast build rule for target.
+runEntityTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
+.PHONY : runEntityTests/fast
 
 TestActionTimer.o: TestActionTimer.cpp.o
 .PHONY : TestActionTimer.o
 
 # target to build an object file
 TestActionTimer.cpp.o:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBattleTests.dir/build.make test/CMakeFiles/runBattleTests.dir/TestActionTimer.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/TestActionTimer.cpp.o
 .PHONY : TestActionTimer.cpp.o
 
 TestActionTimer.i: TestActionTimer.cpp.i
@@ -188,7 +217,8 @@ TestActionTimer.i: TestActionTimer.cpp.i
 
 # target to preprocess a source file
 TestActionTimer.cpp.i:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBattleTests.dir/build.make test/CMakeFiles/runBattleTests.dir/TestActionTimer.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/TestActionTimer.cpp.i
 .PHONY : TestActionTimer.cpp.i
 
 TestActionTimer.s: TestActionTimer.cpp.s
@@ -196,8 +226,36 @@ TestActionTimer.s: TestActionTimer.cpp.s
 
 # target to generate assembly for a file
 TestActionTimer.cpp.s:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runBattleTests.dir/build.make test/CMakeFiles/runBattleTests.dir/TestActionTimer.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/TestActionTimer.cpp.s
 .PHONY : TestActionTimer.cpp.s
+
+TestEntity.o: TestEntity.cpp.o
+.PHONY : TestEntity.o
+
+# target to build an object file
+TestEntity.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/TestEntity.cpp.o
+.PHONY : TestEntity.cpp.o
+
+TestEntity.i: TestEntity.cpp.i
+.PHONY : TestEntity.i
+
+# target to preprocess a source file
+TestEntity.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestEntity.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/TestEntity.cpp.i
+.PHONY : TestEntity.cpp.i
+
+TestEntity.s: TestEntity.cpp.s
+.PHONY : TestEntity.s
+
+# target to generate assembly for a file
+TestEntity.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestEntity.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/TestEntity.cpp.s
+.PHONY : TestEntity.cpp.s
 
 # Help Target
 help:
@@ -211,10 +269,15 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... runBattleTests"
+	@echo "... runActionTimerTests"
+	@echo "... runAllTests"
+	@echo "... runEntityTests"
 	@echo "... TestActionTimer.o"
 	@echo "... TestActionTimer.i"
 	@echo "... TestActionTimer.s"
+	@echo "... TestEntity.o"
+	@echo "... TestEntity.i"
+	@echo "... TestEntity.s"
 .PHONY : help
 
 
