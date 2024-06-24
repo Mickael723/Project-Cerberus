@@ -35,4 +35,4 @@
 googletest
 
 *.cmake
-.txt
+*.txt
