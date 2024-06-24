@@ -265,6 +265,19 @@ runEntityTests/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
 .PHONY : runEntityTests/fast
 
+#=============================================================================
+# Target rules for targets named runHumanoidTests
+
+# Build rule for target.
+runHumanoidTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runHumanoidTests
+.PHONY : runHumanoidTests
+
+# fast build rule for target.
+runHumanoidTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/build
+.PHONY : runHumanoidTests/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -285,6 +298,7 @@ help:
 	@echo "... runActionTimerTests"
 	@echo "... runAllTests"
 	@echo "... runEntityTests"
+	@echo "... runHumanoidTests"
 .PHONY : help
 
 

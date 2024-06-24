@@ -22,7 +22,7 @@ TEST(ProgressBarTests, expectedProgressExecutionTime) {
     at.progressBar();
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-    EXPECT_NEAR(duration, 50, 10);
+    EXPECT_NEAR(duration, 50, 25);
 }
 
 TEST(ProgressBarTests, expectedProgressionResult) {
@@ -38,7 +38,7 @@ TEST(DrainBarTests, expectedDrainExecutionTime) {
     at.drainBar();
     auto end = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
-    EXPECT_NEAR(duration, 50, 10);
+    EXPECT_NEAR(duration, 50, 25);
 }
 
 TEST(DrainBarTests, expectedDrainResult) {

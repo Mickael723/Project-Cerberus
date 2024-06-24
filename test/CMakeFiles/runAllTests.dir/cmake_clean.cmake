@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o.d"
   "CMakeFiles/runAllTests.dir/TestEntity.cpp.o"
   "CMakeFiles/runAllTests.dir/TestEntity.cpp.o.d"
+  "CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o"
+  "CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

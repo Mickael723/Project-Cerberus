@@ -36,6 +36,7 @@
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runAllTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runActionTimerTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runEntityTests.dir
+/Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runHumanoidTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/edit_cache.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/rebuild_cache.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/list_install_components.dir

@@ -203,6 +203,20 @@ runEntityTests/fast:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
 .PHONY : runEntityTests/fast
 
+# Convenience name for target.
+test/CMakeFiles/runHumanoidTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runHumanoidTests.dir/rule
+.PHONY : test/CMakeFiles/runHumanoidTests.dir/rule
+
+# Convenience name for target.
+runHumanoidTests: test/CMakeFiles/runHumanoidTests.dir/rule
+.PHONY : runHumanoidTests
+
+# fast build rule for target.
+runHumanoidTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/build
+.PHONY : runHumanoidTests/fast
+
 TestActionTimer.o: TestActionTimer.cpp.o
 .PHONY : TestActionTimer.o
 
@@ -257,6 +271,33 @@ TestEntity.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/TestEntity.cpp.s
 .PHONY : TestEntity.cpp.s
 
+TestHumanoid.o: TestHumanoid.cpp.o
+.PHONY : TestHumanoid.o
+
+# target to build an object file
+TestHumanoid.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/TestHumanoid.cpp.o
+.PHONY : TestHumanoid.cpp.o
+
+TestHumanoid.i: TestHumanoid.cpp.i
+.PHONY : TestHumanoid.i
+
+# target to preprocess a source file
+TestHumanoid.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/TestHumanoid.cpp.i
+.PHONY : TestHumanoid.cpp.i
+
+TestHumanoid.s: TestHumanoid.cpp.s
+.PHONY : TestHumanoid.s
+
+# target to generate assembly for a file
+TestHumanoid.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/TestHumanoid.cpp.s
+.PHONY : TestHumanoid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,12 +313,16 @@ help:
 	@echo "... runActionTimerTests"
 	@echo "... runAllTests"
 	@echo "... runEntityTests"
+	@echo "... runHumanoidTests"
 	@echo "... TestActionTimer.o"
 	@echo "... TestActionTimer.i"
 	@echo "... TestActionTimer.s"
 	@echo "... TestEntity.o"
 	@echo "... TestEntity.i"
 	@echo "... TestEntity.s"
+	@echo "... TestHumanoid.o"
+	@echo "... TestHumanoid.i"
+	@echo "... TestHumanoid.s"
 .PHONY : help
 
 

@@ -83,17 +83,33 @@ src/CMakeFiles/library.dir/ActionTimer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/library.dir/ActionTimer.cpp.s"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTimer.cpp -o CMakeFiles/library.dir/ActionTimer.cpp.s
 
+src/CMakeFiles/library.dir/Humanoid.cpp.o: src/CMakeFiles/library.dir/flags.make
+src/CMakeFiles/library.dir/Humanoid.cpp.o: src/Humanoid.cpp
+src/CMakeFiles/library.dir/Humanoid.cpp.o: src/CMakeFiles/library.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/library.dir/Humanoid.cpp.o"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/library.dir/Humanoid.cpp.o -MF CMakeFiles/library.dir/Humanoid.cpp.o.d -o CMakeFiles/library.dir/Humanoid.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp
+
+src/CMakeFiles/library.dir/Humanoid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/library.dir/Humanoid.cpp.i"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp > CMakeFiles/library.dir/Humanoid.cpp.i
+
+src/CMakeFiles/library.dir/Humanoid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/library.dir/Humanoid.cpp.s"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp -o CMakeFiles/library.dir/Humanoid.cpp.s
+
 # Object files for target library
 library_OBJECTS = \
-"CMakeFiles/library.dir/ActionTimer.cpp.o"
+"CMakeFiles/library.dir/ActionTimer.cpp.o" \
+"CMakeFiles/library.dir/Humanoid.cpp.o"
 
 # External object files for target library
 library_EXTERNAL_OBJECTS =
 
 src/liblibrary.a: src/CMakeFiles/library.dir/ActionTimer.cpp.o
+src/liblibrary.a: src/CMakeFiles/library.dir/Humanoid.cpp.o
 src/liblibrary.a: src/CMakeFiles/library.dir/build.make
 src/liblibrary.a: src/CMakeFiles/library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library liblibrary.a"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && $(CMAKE_COMMAND) -P CMakeFiles/library.dir/cmake_clean_target.cmake
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/library.dir/link.txt --verbose=$(VERBOSE)
 

@@ -199,6 +199,30 @@ ActionTimer.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionTimer.cpp.s
 .PHONY : ActionTimer.cpp.s
 
+Humanoid.o: Humanoid.cpp.o
+.PHONY : Humanoid.o
+
+# target to build an object file
+Humanoid.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.o
+.PHONY : Humanoid.cpp.o
+
+Humanoid.i: Humanoid.cpp.i
+.PHONY : Humanoid.i
+
+# target to preprocess a source file
+Humanoid.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.i
+.PHONY : Humanoid.cpp.i
+
+Humanoid.s: Humanoid.cpp.s
+.PHONY : Humanoid.s
+
+# target to generate assembly for a file
+Humanoid.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.s
+.PHONY : Humanoid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,6 +239,9 @@ help:
 	@echo "... ActionTimer.o"
 	@echo "... ActionTimer.i"
 	@echo "... ActionTimer.s"
+	@echo "... Humanoid.o"
+	@echo "... Humanoid.i"
+	@echo "... Humanoid.s"
 .PHONY : help
 
 

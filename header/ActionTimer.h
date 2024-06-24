@@ -9,7 +9,7 @@ class ActionTimer {
      bool timerStopped = false;
      bool actionTaken = false;
     public:
-     ActionTimer(int ts = 0, int td = 0, int mp = 0) {timerSpeed = ts, timerDrain = td, maxProgress = mp;}
+     ActionTimer(int ts = 0, int td = 0, int mp = 0) : timerSpeed(ts), timerDrain(td), maxProgress(mp) {}
      bool readyToAct() {return timerProgress == maxProgress;}
      void progressBar();
      void drainBar();

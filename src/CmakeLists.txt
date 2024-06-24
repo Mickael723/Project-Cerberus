@@ -1,5 +1,6 @@
 add_library(library
     ActionTimer.cpp
+    Humanoid.cpp
 )
 
 find_library(M_LIB m)

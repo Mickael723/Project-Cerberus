@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/library.dir/ActionTimer.cpp.o"
   "CMakeFiles/library.dir/ActionTimer.cpp.o.d"
+  "CMakeFiles/library.dir/Humanoid.cpp.o"
+  "CMakeFiles/library.dir/Humanoid.cpp.o.d"
   "liblibrary.a"
   "liblibrary.pdb"
 )
