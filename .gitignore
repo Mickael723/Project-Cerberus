@@ -33,3 +33,6 @@
 
 #googletestsubmodule
 googletest
+
+*.cmake
+.txt
