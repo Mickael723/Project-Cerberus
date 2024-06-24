@@ -36,6 +36,7 @@ TEST(HumanoidTest, ConstructPersonalTimerTest) {
     EXPECT_EQ(timer->getTimerDrain(), 1000);
     EXPECT_EQ(timer->getMaxProgress(), 5);
     h.destroyPersonalTimer(); // Clean up
+    delete timer;
 }
 
 TEST(HumanoidTest, DestroyPersonalTimerTest) {
@@ -57,6 +58,7 @@ TEST(HumanoidTest, ConstructDefaultPersonalTimerTest) {
     EXPECT_EQ(timer->getTimerDrain(), 500);
     EXPECT_EQ(timer->getMaxProgress(), 10);
     h.destroyPersonalTimer(); // Clean up
+    delete timer;
 }
 
 TEST(HumanoidTest, SettersAndGettersTest) {
