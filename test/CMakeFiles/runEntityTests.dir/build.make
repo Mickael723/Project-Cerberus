@@ -97,7 +97,7 @@ bin/runEntityTests: lib/libgtest.a
 bin/runEntityTests: lib/libgtest_main.a
 bin/runEntityTests: src/liblibrary.a
 bin/runEntityTests: lib/libgtest.a
-bin/runEntityTests: /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libm.tbd
+bin/runEntityTests: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
 bin/runEntityTests: test/CMakeFiles/runEntityTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/runEntityTests"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runEntityTests.dir/link.txt --verbose=$(VERBOSE)

@@ -129,7 +129,7 @@ bin/runAllTests: lib/libgtest.a
 bin/runAllTests: lib/libgtest_main.a
 bin/runAllTests: src/liblibrary.a
 bin/runAllTests: lib/libgtest.a
-bin/runAllTests: /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib/libm.tbd
+bin/runAllTests: /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/runAllTests"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runAllTests.dir/link.txt --verbose=$(VERBOSE)
