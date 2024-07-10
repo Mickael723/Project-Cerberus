@@ -23,6 +23,4 @@ class HumanoidEffects{
      bool checkAttackDebuff() const {return isAttackDebuff;}
      bool checkDefenseBuff() const {return isDefenseBuff;}
      bool checkDefenseDebuff() const {return isDefenseDebuff;}
-
-
 };

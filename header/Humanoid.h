@@ -19,6 +19,7 @@ class Humanoid : public Entity{
      void constructPersonalTimer(int timerSpeed, int timerDrain, int maxProgress); // constructs personalTimer based on inBattle
      void constructDefaultPersonaltimer();
      void destroyPersonalTimer(); // destroys personalTimer and sets it to nullptr based on inBattle
+     HumanoidEffects configurePersonalEffects() {return personalEffects;}
      // getters and setters
      void setHealthPoints(int hp) {healthPoints = hp;}
      void setMaxHealthPoints(int maxHp) {maxHealthPoints = maxHp;}
@@ -30,4 +31,5 @@ class Humanoid : public Entity{
      bool getInBattle() const {return inBattle;}
      bool getIsAlive() const {return isAlive;}
      ActionTimer* getPersonalTimer() const {return personalTimer;}
+     HumanoidEffects getPersonalEffects() const {return personalEffects;}
 };
