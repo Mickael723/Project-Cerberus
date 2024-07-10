@@ -217,6 +217,20 @@ runHumanoidTests/fast:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/build
 .PHONY : runHumanoidTests/fast
 
+# Convenience name for target.
+test/CMakeFiles/runActionsTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runActionsTests.dir/rule
+.PHONY : test/CMakeFiles/runActionsTests.dir/rule
+
+# Convenience name for target.
+runActionsTests: test/CMakeFiles/runActionsTests.dir/rule
+.PHONY : runActionsTests
+
+# fast build rule for target.
+runActionsTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/build
+.PHONY : runActionsTests/fast
+
 TestActionTimer.o: TestActionTimer.cpp.o
 .PHONY : TestActionTimer.o
 
@@ -243,6 +257,33 @@ TestActionTimer.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.s
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/TestActionTimer.cpp.s
 .PHONY : TestActionTimer.cpp.s
+
+TestActions.o: TestActions.cpp.o
+.PHONY : TestActions.o
+
+# target to build an object file
+TestActions.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActions.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/TestActions.cpp.o
+.PHONY : TestActions.cpp.o
+
+TestActions.i: TestActions.cpp.i
+.PHONY : TestActions.i
+
+# target to preprocess a source file
+TestActions.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActions.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/TestActions.cpp.i
+.PHONY : TestActions.cpp.i
+
+TestActions.s: TestActions.cpp.s
+.PHONY : TestActions.s
+
+# target to generate assembly for a file
+TestActions.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActions.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/TestActions.cpp.s
+.PHONY : TestActions.cpp.s
 
 TestEntity.o: TestEntity.cpp.o
 .PHONY : TestEntity.o
@@ -311,12 +352,16 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... runActionTimerTests"
+	@echo "... runActionsTests"
 	@echo "... runAllTests"
 	@echo "... runEntityTests"
 	@echo "... runHumanoidTests"
 	@echo "... TestActionTimer.o"
 	@echo "... TestActionTimer.i"
 	@echo "... TestActionTimer.s"
+	@echo "... TestActions.o"
+	@echo "... TestActions.i"
+	@echo "... TestActions.s"
 	@echo "... TestEntity.o"
 	@echo "... TestEntity.i"
 	@echo "... TestEntity.s"

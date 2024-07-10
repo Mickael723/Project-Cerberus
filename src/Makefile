@@ -175,6 +175,54 @@ library/fast:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/build
 .PHONY : library/fast
 
+ActionList.o: ActionList.cpp.o
+.PHONY : ActionList.o
+
+# target to build an object file
+ActionList.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionList.cpp.o
+.PHONY : ActionList.cpp.o
+
+ActionList.i: ActionList.cpp.i
+.PHONY : ActionList.i
+
+# target to preprocess a source file
+ActionList.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionList.cpp.i
+.PHONY : ActionList.cpp.i
+
+ActionList.s: ActionList.cpp.s
+.PHONY : ActionList.s
+
+# target to generate assembly for a file
+ActionList.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionList.cpp.s
+.PHONY : ActionList.cpp.s
+
+ActionTemplates.o: ActionTemplates.cpp.o
+.PHONY : ActionTemplates.o
+
+# target to build an object file
+ActionTemplates.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionTemplates.cpp.o
+.PHONY : ActionTemplates.cpp.o
+
+ActionTemplates.i: ActionTemplates.cpp.i
+.PHONY : ActionTemplates.i
+
+# target to preprocess a source file
+ActionTemplates.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionTemplates.cpp.i
+.PHONY : ActionTemplates.cpp.i
+
+ActionTemplates.s: ActionTemplates.cpp.s
+.PHONY : ActionTemplates.s
+
+# target to generate assembly for a file
+ActionTemplates.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionTemplates.cpp.s
+.PHONY : ActionTemplates.cpp.s
+
 ActionTimer.o: ActionTimer.cpp.o
 .PHONY : ActionTimer.o
 
@@ -236,6 +284,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... library"
+	@echo "... ActionList.o"
+	@echo "... ActionList.i"
+	@echo "... ActionList.s"
+	@echo "... ActionTemplates.o"
+	@echo "... ActionTemplates.i"
+	@echo "... ActionTemplates.s"
 	@echo "... ActionTimer.o"
 	@echo "... ActionTimer.i"
 	@echo "... ActionTimer.s"

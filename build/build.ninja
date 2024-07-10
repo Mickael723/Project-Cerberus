@@ -479,6 +479,20 @@ build src/CMakeFiles/library.dir/Humanoid.cpp.o: CXX_COMPILER__library_unscanned
   OBJECT_DIR = src/CMakeFiles/library.dir
   OBJECT_FILE_DIR = src/CMakeFiles/library.dir
 
+build src/CMakeFiles/library.dir/ActionList.cpp.o: CXX_COMPILER__library_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionList.cpp || cmake_object_order_depends_target_library
+  DEP_FILE = src/CMakeFiles/library.dir/ActionList.cpp.o.d
+  FLAGS = -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header
+  OBJECT_DIR = src/CMakeFiles/library.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/library.dir
+
+build src/CMakeFiles/library.dir/ActionTemplates.cpp.o: CXX_COMPILER__library_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTemplates.cpp || cmake_object_order_depends_target_library
+  DEP_FILE = src/CMakeFiles/library.dir/ActionTemplates.cpp.o.d
+  FLAGS = -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header
+  OBJECT_DIR = src/CMakeFiles/library.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/library.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target library
@@ -487,7 +501,7 @@ build src/CMakeFiles/library.dir/Humanoid.cpp.o: CXX_COMPILER__library_unscanned
 #############################################
 # Link the static library src/liblibrary.a
 
-build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Humanoid.cpp.o
+build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Humanoid.cpp.o src/CMakeFiles/library.dir/ActionList.cpp.o src/CMakeFiles/library.dir/ActionTemplates.cpp.o
   ARCH_FLAGS = -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LANGUAGE_COMPILE_FLAGS = -std=c++1y -g -g
   OBJECT_DIR = src/CMakeFiles/library.dir
@@ -597,6 +611,13 @@ build test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: CXX_COMPILER__runAllTe
   OBJECT_DIR = test/CMakeFiles/runAllTests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/runAllTests.dir
 
+build test/CMakeFiles/runAllTests.dir/TestActions.cpp.o: CXX_COMPILER__runAllTests_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestActions.cpp || cmake_object_order_depends_target_runAllTests
+  DEP_FILE = test/CMakeFiles/runAllTests.dir/TestActions.cpp.o.d
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest
+  OBJECT_DIR = test/CMakeFiles/runAllTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runAllTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runAllTests
@@ -605,7 +626,7 @@ build test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: CXX_COMPILER__runAllTe
 #############################################
 # Link the executable bin/runAllTests
 
-build bin/runAllTests: CXX_EXECUTABLE_LINKER__runAllTests_Debug test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
+build bin/runAllTests: CXX_EXECUTABLE_LINKER__runAllTests_Debug test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o test/CMakeFiles/runAllTests.dir/TestActions.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
   FLAGS = -std=c++1y -g -std=c++1y -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  lib/libgtest_main.a  src/liblibrary.a  lib/libgtest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
   OBJECT_DIR = test/CMakeFiles/runAllTests.dir
@@ -713,6 +734,39 @@ build bin/runHumanoidTests: CXX_EXECUTABLE_LINKER__runHumanoidTests_Debug test/C
   TARGET_FILE = bin/runHumanoidTests
   TARGET_PDB = runHumanoidTests.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target runActionsTests
+
+
+#############################################
+# Order-only phony target for runActionsTests
+
+build cmake_object_order_depends_target_runActionsTests: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_library
+
+build test/CMakeFiles/runActionsTests.dir/TestActions.cpp.o: CXX_COMPILER__runActionsTests_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestActions.cpp || cmake_object_order_depends_target_runActionsTests
+  DEP_FILE = test/CMakeFiles/runActionsTests.dir/TestActions.cpp.o.d
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest
+  OBJECT_DIR = test/CMakeFiles/runActionsTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runActionsTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runActionsTests
+
+
+#############################################
+# Link the executable bin/runActionsTests
+
+build bin/runActionsTests: CXX_EXECUTABLE_LINKER__runActionsTests_Debug test/CMakeFiles/runActionsTests.dir/TestActions.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  lib/libgtest_main.a  src/liblibrary.a  lib/libgtest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
+  OBJECT_DIR = test/CMakeFiles/runActionsTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/runActionsTests
+  TARGET_PDB = runActionsTests.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -804,6 +858,8 @@ build library: phony src/liblibrary.a
 
 build runActionTimerTests: phony bin/runActionTimerTests
 
+build runActionsTests: phony bin/runActionsTests
+
 build runAllTests: phony bin/runAllTests
 
 build runEntityTests: phony bin/runEntityTests
@@ -853,7 +909,7 @@ build src/all: phony src/liblibrary.a
 #############################################
 # Folder: /Users/mickaelosegueda/Desktop/Project-Cerberus/build/test
 
-build test/all: phony bin/runAllTests bin/runActionTimerTests bin/runEntityTests bin/runHumanoidTests
+build test/all: phony bin/runAllTests bin/runActionTimerTests bin/runEntityTests bin/runHumanoidTests bin/runActionsTests
 
 # =============================================================================
 # Built-in targets

@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionList.cpp" "src/CMakeFiles/library.dir/ActionList.cpp.o" "gcc" "src/CMakeFiles/library.dir/ActionList.cpp.o.d"
+  "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTemplates.cpp" "src/CMakeFiles/library.dir/ActionTemplates.cpp.o" "gcc" "src/CMakeFiles/library.dir/ActionTemplates.cpp.o.d"
   "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTimer.cpp" "src/CMakeFiles/library.dir/ActionTimer.cpp.o" "gcc" "src/CMakeFiles/library.dir/ActionTimer.cpp.o.d"
   "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp" "src/CMakeFiles/library.dir/Humanoid.cpp.o" "gcc" "src/CMakeFiles/library.dir/Humanoid.cpp.o.d"
   )

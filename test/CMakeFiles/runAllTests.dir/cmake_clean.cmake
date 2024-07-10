@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "../bin/runAllTests.pdb"
   "CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o"
   "CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o.d"
+  "CMakeFiles/runAllTests.dir/TestActions.cpp.o"
+  "CMakeFiles/runAllTests.dir/TestActions.cpp.o.d"
   "CMakeFiles/runAllTests.dir/TestEntity.cpp.o"
   "CMakeFiles/runAllTests.dir/TestEntity.cpp.o.d"
   "CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o"

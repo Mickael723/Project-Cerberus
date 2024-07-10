@@ -12,6 +12,7 @@ add_executable(runAllTests
   TestActionTimer.cpp
   TestEntity.cpp
   TestHumanoid.cpp
+  TestActions.cpp
 )
 
 add_executable(runActionTimerTests
@@ -26,7 +27,13 @@ add_executable(runHumanoidTests
   TestHumanoid.cpp
 )
 
+add_executable(runActionsTests
+  TestActions.cpp
+)
+
+
 target_link_libraries(runAllTests gmock gtest gtest_main library)
 target_link_libraries(runActionTimerTests gmock gtest gtest_main library)
 target_link_libraries(runEntityTests gmock gtest gtest_main library)
 target_link_libraries(runHumanoidTests gmock gtest gtest_main library)
+target_link_libraries(runActionsTests gmock gtest gtest_main library)

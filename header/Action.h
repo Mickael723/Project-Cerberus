@@ -1,16 +1,16 @@
 #pragma once
-#include "Entity.h"
+#include "Humanoid.h"
 
-enum ACTION_CATEGORY {TECHNIQUE, FINISHER, REVERSAL, SUPER, UNKNOWN};
+enum ACTION_CATEGORY {ATTACK, DEFEND, BUFF, DEBUFF, SPECIAL, UNKNOWN};
 
 class Action : public Entity {
     private:
      ACTION_CATEGORY actionCategory;
      std::string description;
     public:
-     virtual void performAction() = 0;
+     virtual void performAction(Humanoid& target) = 0;
      //getters and setters
-     Action(std::string name = "", int id = -1, ACTION_CATEGORY actionCategory = UNKNOWN, std::string description = "") 
+     Action(const std::string& name = "", const int id = -1, const ACTION_CATEGORY actionCategory = UNKNOWN, const std::string& description = "") 
      : Entity(name, id), actionCategory(actionCategory), description(description) {}
      void setActionCategory(ACTION_CATEGORY actionCategory) {this->actionCategory = actionCategory;}
      void setDescription(std::string description) {this->description = description;}
