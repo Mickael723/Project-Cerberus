@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Entity.h"
+#include "HumanoidEffects.h"
 #include "ActionTimer.h"
 
 class Humanoid : public Entity{
@@ -9,6 +10,7 @@ class Humanoid : public Entity{
      int maxHealthPoints;
      bool inBattle = false;
      bool isAlive = false;
+     HumanoidEffects personalEffects;
      ActionTimer* personalTimer = nullptr;
     public:
      Humanoid(std::string name = "", int id = -1, int hp = 0, int maxHp = 0) : Entity(name,id), healthPoints(hp), maxHealthPoints(maxHp) {}

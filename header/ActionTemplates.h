@@ -19,3 +19,7 @@ class AttackAction : public Action {
      int getStaminaCost() {return staminaCost;}
 
 };
+
+class BuffAction : public Action {
+
+};
