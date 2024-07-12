@@ -1,8 +1,8 @@
 #include "../header/ActionList.h"
 
-void ActionList::remove(std::string actionName) {
+void ActionList::remove(Action* action) {
     for (auto it = actionVector.begin(); it != actionVector.end(); ++it) {
-        if ((*it)->getName() == actionName) {
+        if ((*it) == action) {
             actionVector.erase(it);
             maxIndex--;
             return;

@@ -2,6 +2,7 @@
 
 #include "Entity.h"
 #include "HumanoidEffects.h"
+#include "ActionList.h"
 #include "ActionTimer.h"
 
 class Humanoid : public Entity{
@@ -11,7 +12,7 @@ class Humanoid : public Entity{
      bool inBattle = false;
      bool isAlive = false;
      HumanoidEffects personalEffects;
-     //ActionList personalActionList;
+     ActionList personalActionList;
      ActionTimer* personalTimer = nullptr;
     public:
      Humanoid(std::string name = "", int id = -1, int hp = 0, int maxHp = 0) : Entity(name,id), healthPoints(hp), maxHealthPoints(maxHp) {}
@@ -27,13 +28,13 @@ class Humanoid : public Entity{
      void setInBattle(bool tf) {inBattle = tf;}
      void setIsAlive(bool tf) {isAlive = tf;}
      void setPersonalTimer(ActionTimer* at) {personalTimer = at;}
-     //void setPersonalActionList(ActionList actionList) {personalActionList = actionList;}
+     void setPersonalActionList(ActionList actionList) {personalActionList = actionList;}
 
      int getHealthPoints() const {return healthPoints;}
      int getMaxHealthPoints() const {return maxHealthPoints;}
      bool getInBattle() const {return inBattle;}
      bool getIsAlive() const {return isAlive;}
-     //ActionList getPersonalActionList() {return personalActionList;}
+     ActionList getPersonalActionList() {return personalActionList;}
      ActionTimer* getPersonalTimer() const {return personalTimer;}
      HumanoidEffects getPersonalEffects() const {return personalEffects;}
 };
