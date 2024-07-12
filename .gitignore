@@ -34,5 +34,10 @@
 #googletestsubmodule
 googletest
 
+#Folders
+bin
+CMakeFiles
+CMakeLists.txt
+
 *.cmake
 *.txt

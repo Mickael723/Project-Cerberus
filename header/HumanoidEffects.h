@@ -1,4 +1,4 @@
-#include "Humanoid.h"
+#pragma once
 
 enum EffectType {BLOCKING, ATTACK_UP, ATTACK_DOWN, DEFENSE_UP, DEFENSE_DOWN};
 

@@ -949,7 +949,6 @@ test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o: test/TestActionTimer.cpp 
 test/CMakeFiles/runAllTests.dir/TestActions.cpp.o: test/TestActions.cpp \
   header/ActionTemplates.h \
   header/Action.h \
-  header/Humanoid.h \
   header/Entity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \
@@ -1707,6 +1706,8 @@ test/CMakeFiles/runAllTests.dir/TestActions.cpp.o: test/TestActions.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
+  header/Humanoid.h \
+  header/HumanoidEffects.h \
   header/ActionTimer.h \
   googletest/googletest/include/gtest/gtest.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
@@ -3565,6 +3566,7 @@ test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: test/TestHumanoid.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/allocator_destructor.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__memory/uses_allocator_construction.h \
+  header/HumanoidEffects.h \
   header/ActionTimer.h \
   googletest/googletest/include/gtest/gtest.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
@@ -3916,6 +3918,8 @@ googletest/googletest/include/gtest/gtest-message.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ino64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/sys/_types/_ino_t.h:
+
+header/HumanoidEffects.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/optional:
 

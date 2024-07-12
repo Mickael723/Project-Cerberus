@@ -1,12 +1,13 @@
 #pragma once
 
-#include "Action.h"
+#include "ActionTemplates.h"
 #include <vector>
 
 class ActionList {
     private:
      unsigned maxIndex = 0;
      std::vector<Action*> actionVector;
+     
     public:
      void push_back(Action* action) {actionVector.push_back(action);
                                      maxIndex++;}
