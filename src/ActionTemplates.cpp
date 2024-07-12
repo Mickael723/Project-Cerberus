@@ -6,7 +6,7 @@ void AttackAction::performAction(Humanoid& target) {
 
 void AttackAction::damageTarget(Humanoid& target) {
     if (target.getPersonalEffects().checkBlocking()) {
-        target.setHealthPoints(target.getHealthPoints() - (attackPotency * 0.70));
+        target.setHealthPoints(target.getHealthPoints() - (attackPotency * 0.50));
     }
     else {
         target.setHealthPoints(target.getHealthPoints() - attackPotency);
