@@ -2,6 +2,7 @@
 
 #include "Entity.h"
 #include "HumanoidEffects.h"
+#include "BattleStats.h"
 #include "ActionList.h"
 #include "ActionTimer.h"
 
@@ -12,6 +13,7 @@ class Humanoid : public Entity{
      bool inBattle = false;
      bool isAlive = false;
      HumanoidEffects personalEffects;
+     BattleStats personalStats;
      ActionList personalActionList;
      ActionTimer* personalTimer = nullptr;
     public:
@@ -37,4 +39,5 @@ class Humanoid : public Entity{
      ActionList getPersonalActionList() {return personalActionList;}
      ActionTimer* getPersonalTimer() const {return personalTimer;}
      HumanoidEffects getPersonalEffects() const {return personalEffects;}
+     BattleStats getPersonalStats() const {return personalStats;}
 };
