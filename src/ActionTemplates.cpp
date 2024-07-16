@@ -1,4 +1,5 @@
 #include "../header/ActionTemplates.h"
+#include "../header/DamageCalculator.h"
 
 void AttackAction::performAction(Humanoid& target) {
         damageTarget(target);
