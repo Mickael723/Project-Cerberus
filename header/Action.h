@@ -1,9 +1,9 @@
 #pragma once
-#include "Humanoid.h"
+#include "Combatant.h"
 
-enum ACTION_CATEGORY {ATTACK, DEFEND, BUFF, DEBUFF, SPECIAL, UNKNOWN};
+enum ACTION_CATEGORY {ATTACK, DEFEND, BUFF, DEBUFF, HEAL, UNKNOWN};
 
-class Humanoid;
+class Combatant;
 
 class Action : public Entity {
     private:
@@ -11,7 +11,7 @@ class Action : public Entity {
      std::string description;
      int staminaCost;
     public:
-     virtual void performAction(Humanoid& target) = 0;
+     virtual void performAction(Combatant& target) = 0;
      //getters and setters
      Action(const std::string& name = "", const int id = -1, const ACTION_CATEGORY actionCategory = UNKNOWN, const std::string& description = "", const int staminaCost = -1) 
      : Entity(name, id), actionCategory(actionCategory), description(description), staminaCost(staminaCost) {}

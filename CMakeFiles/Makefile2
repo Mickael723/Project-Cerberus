@@ -153,7 +153,7 @@ src/clean: src/CMakeFiles/library.dir/clean
 test/all: test/CMakeFiles/runAllTests.dir/all
 test/all: test/CMakeFiles/runActionTimerTests.dir/all
 test/all: test/CMakeFiles/runEntityTests.dir/all
-test/all: test/CMakeFiles/runHumanoidTests.dir/all
+test/all: test/CMakeFiles/runCombatantTests.dir/all
 test/all: test/CMakeFiles/runActionsTests.dir/all
 .PHONY : test/all
 
@@ -165,7 +165,7 @@ test/preinstall:
 test/clean: test/CMakeFiles/runAllTests.dir/clean
 test/clean: test/CMakeFiles/runActionTimerTests.dir/clean
 test/clean: test/CMakeFiles/runEntityTests.dir/clean
-test/clean: test/CMakeFiles/runHumanoidTests.dir/clean
+test/clean: test/CMakeFiles/runCombatantTests.dir/clean
 test/clean: test/CMakeFiles/runActionsTests.dir/clean
 .PHONY : test/clean
 
@@ -368,7 +368,7 @@ test/CMakeFiles/runEntityTests.dir/all: googletest/googletest/CMakeFiles/gtest_m
 test/CMakeFiles/runEntityTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=23,24 "Built target runEntityTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=25,26 "Built target runEntityTests"
 .PHONY : test/CMakeFiles/runEntityTests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -388,33 +388,33 @@ test/CMakeFiles/runEntityTests.dir/clean:
 .PHONY : test/CMakeFiles/runEntityTests.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/runHumanoidTests.dir
+# Target rules for target test/CMakeFiles/runCombatantTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/runHumanoidTests.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
-test/CMakeFiles/runHumanoidTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
-test/CMakeFiles/runHumanoidTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/runHumanoidTests.dir/all: src/CMakeFiles/library.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=25,26 "Built target runHumanoidTests"
-.PHONY : test/CMakeFiles/runHumanoidTests.dir/all
+test/CMakeFiles/runCombatantTests.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
+test/CMakeFiles/runCombatantTests.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+test/CMakeFiles/runCombatantTests.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/runCombatantTests.dir/all: src/CMakeFiles/library.dir/all
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=23,24 "Built target runCombatantTests"
+.PHONY : test/CMakeFiles/runCombatantTests.dir/all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/runHumanoidTests.dir/rule: cmake_check_build_system
+test/CMakeFiles/runCombatantTests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runHumanoidTests.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runCombatantTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
-.PHONY : test/CMakeFiles/runHumanoidTests.dir/rule
+.PHONY : test/CMakeFiles/runCombatantTests.dir/rule
 
 # Convenience name for target.
-runHumanoidTests: test/CMakeFiles/runHumanoidTests.dir/rule
-.PHONY : runHumanoidTests
+runCombatantTests: test/CMakeFiles/runCombatantTests.dir/rule
+.PHONY : runCombatantTests
 
 # clean rule for target.
-test/CMakeFiles/runHumanoidTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/clean
-.PHONY : test/CMakeFiles/runHumanoidTests.dir/clean
+test/CMakeFiles/runCombatantTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/clean
+.PHONY : test/CMakeFiles/runCombatantTests.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/runActionsTests.dir

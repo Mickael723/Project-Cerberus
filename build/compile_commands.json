@@ -31,9 +31,9 @@
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
-  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header  -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o src/CMakeFiles/library.dir/Humanoid.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp",
-  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/Humanoid.cpp",
-  "output": "src/CMakeFiles/library.dir/Humanoid.cpp.o"
+  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header  -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o src/CMakeFiles/library.dir/Combatant.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/src/Combatant.cpp",
+  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/Combatant.cpp",
+  "output": "src/CMakeFiles/library.dir/Combatant.cpp.o"
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
@@ -61,9 +61,9 @@
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
-  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest  -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp",
-  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp",
-  "output": "test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o"
+  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest  -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp",
+  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp",
+  "output": "test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o"
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
@@ -85,9 +85,9 @@
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
-  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest  -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o test/CMakeFiles/runHumanoidTests.dir/TestHumanoid.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp",
-  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp",
-  "output": "test/CMakeFiles/runHumanoidTests.dir/TestHumanoid.cpp.o"
+  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest  -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o test/CMakeFiles/runCombatantTests.dir/TestCombatant.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp",
+  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp",
+  "output": "test/CMakeFiles/runCombatantTests.dir/TestCombatant.cpp.o"
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",

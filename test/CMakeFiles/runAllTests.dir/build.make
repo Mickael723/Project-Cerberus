@@ -97,19 +97,19 @@ test/CMakeFiles/runAllTests.dir/TestEntity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/TestEntity.cpp.s"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestEntity.cpp -o CMakeFiles/runAllTests.dir/TestEntity.cpp.s
 
-test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
-test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: test/TestHumanoid.cpp
-test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o: test/CMakeFiles/runAllTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o"
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o -MF CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o.d -o CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp
+test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
+test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o: test/TestCombatant.cpp
+test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o: test/CMakeFiles/runAllTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o -MF CMakeFiles/runAllTests.dir/TestCombatant.cpp.o.d -o CMakeFiles/runAllTests.dir/TestCombatant.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp
 
-test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/TestHumanoid.cpp.i"
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp > CMakeFiles/runAllTests.dir/TestHumanoid.cpp.i
+test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runAllTests.dir/TestCombatant.cpp.i"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp > CMakeFiles/runAllTests.dir/TestCombatant.cpp.i
 
-test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/TestHumanoid.cpp.s"
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestHumanoid.cpp -o CMakeFiles/runAllTests.dir/TestHumanoid.cpp.s
+test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runAllTests.dir/TestCombatant.cpp.s"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/test && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestCombatant.cpp -o CMakeFiles/runAllTests.dir/TestCombatant.cpp.s
 
 test/CMakeFiles/runAllTests.dir/TestActions.cpp.o: test/CMakeFiles/runAllTests.dir/flags.make
 test/CMakeFiles/runAllTests.dir/TestActions.cpp.o: test/TestActions.cpp
@@ -129,7 +129,7 @@ test/CMakeFiles/runAllTests.dir/TestActions.cpp.s: cmake_force
 runAllTests_OBJECTS = \
 "CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o" \
 "CMakeFiles/runAllTests.dir/TestEntity.cpp.o" \
-"CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o" \
+"CMakeFiles/runAllTests.dir/TestCombatant.cpp.o" \
 "CMakeFiles/runAllTests.dir/TestActions.cpp.o"
 
 # External object files for target runAllTests
@@ -137,7 +137,7 @@ runAllTests_EXTERNAL_OBJECTS =
 
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o
-bin/runAllTests: test/CMakeFiles/runAllTests.dir/TestHumanoid.cpp.o
+bin/runAllTests: test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/TestActions.cpp.o
 bin/runAllTests: test/CMakeFiles/runAllTests.dir/build.make
 bin/runAllTests: lib/libgmock.a

@@ -8,16 +8,16 @@ AttackBuffAction battleCry("Battle Cry", 2, "Increases Target's Attack", 10, 1.2
 DefenseBuffAction guardStance("Guard Stance", 3, "Increases Target's Defense", 10, 1.25);
 AttackDebuffAction intimidate("Intimidate", 4, "Lowers Target's Defense", 10, 1.25);
 DefenseDebuffAction taunt("Taunt", 5, "Lowers Target's Defense", 10, 1.25);
-Humanoid bob("Bob", 10, 100, 100);
-Humanoid joe("Joe", 11, 100, 100);
+Combatant bob("Bob", 10, 100, 100);
+Combatant joe("Joe", 11, 100, 100);
 
-TEST(AttackActions, RegularHumanoid) {
+TEST(AttackActions, RegularCombatant) {
     punch.performAction(bob);
     EXPECT_EQ(bob.getHealthPoints(), 80);
     EXPECT_EQ(bob.getIsAlive(), true);
 }
 
-TEST(AttackActions, NearDeathHumanoid) {
+TEST(AttackActions, NearDeathCombatant) {
     bob.setHealthPoints(20);
     bob.updateIsAlive();
     punch.performAction(bob);
@@ -25,7 +25,7 @@ TEST(AttackActions, NearDeathHumanoid) {
     EXPECT_EQ(bob.getIsAlive(), false);
 }
 
-TEST(AttackActions, OverkillHumanoid) {
+TEST(AttackActions, OverkillCombatant) {
     bob.setHealthPoints(5);
     bob.updateIsAlive();
     punch.performAction(bob);
@@ -33,7 +33,7 @@ TEST(AttackActions, OverkillHumanoid) {
     EXPECT_EQ(bob.getIsAlive(), false);
 }
 
-TEST(AttackActions, BlockingHumanoid) {
+TEST(AttackActions, BlockingCombatant) {
     bob.setHealthPoints(100);
     bob.updateIsAlive();
     bob.configurePersonalEffects().setBlock(true);

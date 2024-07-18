@@ -266,17 +266,17 @@ runEntityTests/fast:
 .PHONY : runEntityTests/fast
 
 #=============================================================================
-# Target rules for targets named runHumanoidTests
+# Target rules for targets named runCombatantTests
 
 # Build rule for target.
-runHumanoidTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runHumanoidTests
-.PHONY : runHumanoidTests
+runCombatantTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runCombatantTests
+.PHONY : runCombatantTests
 
 # fast build rule for target.
-runHumanoidTests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runHumanoidTests.dir/build.make test/CMakeFiles/runHumanoidTests.dir/build
-.PHONY : runHumanoidTests/fast
+runCombatantTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/build
+.PHONY : runCombatantTests/fast
 
 #=============================================================================
 # Target rules for targets named runActionsTests
@@ -311,8 +311,8 @@ help:
 	@echo "... runActionTimerTests"
 	@echo "... runActionsTests"
 	@echo "... runAllTests"
+	@echo "... runCombatantTests"
 	@echo "... runEntityTests"
-	@echo "... runHumanoidTests"
 .PHONY : help
 
 

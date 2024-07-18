@@ -11,7 +11,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y -g")
 add_executable(runAllTests
   TestActionTimer.cpp
   TestEntity.cpp
-  TestHumanoid.cpp
+  TestCombatant.cpp
   TestActions.cpp
 )
 
@@ -23,8 +23,8 @@ add_executable(runEntityTests
   TestEntity.cpp
 )
 
-add_executable(runHumanoidTests
-  TestHumanoid.cpp
+add_executable(runCombatantTests
+  TestCombatant.cpp
 )
 
 add_executable(runActionsTests
@@ -35,5 +35,5 @@ add_executable(runActionsTests
 target_link_libraries(runAllTests gmock gtest gtest_main library)
 target_link_libraries(runActionTimerTests gmock gtest gtest_main library)
 target_link_libraries(runEntityTests gmock gtest gtest_main library)
-target_link_libraries(runHumanoidTests gmock gtest gtest_main library)
+target_link_libraries(runCombatantTests gmock gtest gtest_main library)
 target_link_libraries(runActionsTests gmock gtest gtest_main library)

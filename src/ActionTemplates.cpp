@@ -1,11 +1,11 @@
 #include "../header/ActionTemplates.h"
 #include "../header/DamageCalculator.h"
 
-void AttackAction::performAction(Humanoid& target) {
+void AttackAction::performAction(Combatant& target) {
         damageTarget(target);
 }
 
-void AttackAction::damageTarget(Humanoid& target) {
+void AttackAction::damageTarget(Combatant& target) {
     if (target.getPersonalEffects().checkBlocking()) {
         target.setHealthPoints(target.getHealthPoints() - (attackPotency * 0.50));
         target.configurePersonalEffects().setBlock(false);
@@ -16,18 +16,18 @@ void AttackAction::damageTarget(Humanoid& target) {
     target.updateIsAlive();
 }
 
-void AttackBuffAction::performAction(Humanoid& target) {
+void AttackBuffAction::performAction(Combatant& target) {
     target.configurePersonalEffects().setAttackBuff(true);
 }
 
-void DefenseBuffAction::performAction(Humanoid& target) {
+void DefenseBuffAction::performAction(Combatant& target) {
     target.configurePersonalEffects().setDefenseBuff(true);
 }
 
-void AttackDebuffAction::performAction(Humanoid& target) {
+void AttackDebuffAction::performAction(Combatant& target) {
     target.configurePersonalEffects().setAttackDebuff(true);
 }
 
-void DefenseDebuffAction::performAction(Humanoid& target) {
+void DefenseDebuffAction::performAction(Combatant& target) {
     target.configurePersonalEffects().setDefenseDebuff(true);
 }

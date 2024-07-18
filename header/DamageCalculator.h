@@ -1,9 +1,10 @@
 #pragma once
-#include "Humanoid.h"
+
+#include "Combatant.h"
 
 
 
 class DamageCalculator {
     public:
-     static int performCalculation(const Humanoid& attacker, const Humanoid& defender, const int baseDamage);
+     static int performCalculation(const Combatant& attacker, const Combatant& defender, const int baseDamage);
 };

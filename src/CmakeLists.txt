@@ -1,6 +1,6 @@
 add_library(library
     ActionTimer.cpp
-    Humanoid.cpp
+    Combatant.cpp
     ActionList.cpp
     ActionTemplates.cpp
 )

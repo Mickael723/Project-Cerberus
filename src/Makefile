@@ -247,29 +247,29 @@ ActionTimer.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/ActionTimer.cpp.s
 .PHONY : ActionTimer.cpp.s
 
-Humanoid.o: Humanoid.cpp.o
-.PHONY : Humanoid.o
+Combatant.o: Combatant.cpp.o
+.PHONY : Combatant.o
 
 # target to build an object file
-Humanoid.cpp.o:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.o
-.PHONY : Humanoid.cpp.o
+Combatant.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Combatant.cpp.o
+.PHONY : Combatant.cpp.o
 
-Humanoid.i: Humanoid.cpp.i
-.PHONY : Humanoid.i
+Combatant.i: Combatant.cpp.i
+.PHONY : Combatant.i
 
 # target to preprocess a source file
-Humanoid.cpp.i:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.i
-.PHONY : Humanoid.cpp.i
+Combatant.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Combatant.cpp.i
+.PHONY : Combatant.cpp.i
 
-Humanoid.s: Humanoid.cpp.s
-.PHONY : Humanoid.s
+Combatant.s: Combatant.cpp.s
+.PHONY : Combatant.s
 
 # target to generate assembly for a file
-Humanoid.cpp.s:
-	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Humanoid.cpp.s
-.PHONY : Humanoid.cpp.s
+Combatant.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Combatant.cpp.s
+.PHONY : Combatant.cpp.s
 
 # Help Target
 help:
@@ -293,9 +293,9 @@ help:
 	@echo "... ActionTimer.o"
 	@echo "... ActionTimer.i"
 	@echo "... ActionTimer.s"
-	@echo "... Humanoid.o"
-	@echo "... Humanoid.i"
-	@echo "... Humanoid.s"
+	@echo "... Combatant.o"
+	@echo "... Combatant.i"
+	@echo "... Combatant.s"
 .PHONY : help
 
 

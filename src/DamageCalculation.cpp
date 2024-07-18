@@ -1,6 +1,6 @@
 #include "../header/DamageCalculator.h"
 
-int DamageCalculator::performCalculation(const Humanoid& attacker, const Humanoid& defender, const int baseDamage) {
+int DamageCalculator::performCalculation(const Combatant& attacker, const Combatant& defender, const int baseDamage) {
     double attackerDamage = attacker.getPersonalStats().getAttackStrength();
     double defenderDefense = defender.getPersonalStats().getIncomingDefense();
 
