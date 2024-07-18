@@ -281,12 +281,12 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 src/CMakeFiles/library.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=9,10,11,12,13 "Built target library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=9,10,11,12 "Built target library"
 .PHONY : src/CMakeFiles/library.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : src/CMakeFiles/library.dir/rule
@@ -310,12 +310,12 @@ test/CMakeFiles/runAllTests.dir/all: googletest/googletest/CMakeFiles/gtest_main
 test/CMakeFiles/runAllTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=18,19,20,21,22 "Built target runAllTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=17,18,19,20,21 "Built target runAllTests"
 .PHONY : test/CMakeFiles/runAllTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runAllTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runAllTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : test/CMakeFiles/runAllTests.dir/rule
@@ -339,12 +339,12 @@ test/CMakeFiles/runActionTimerTests.dir/all: googletest/googletest/CMakeFiles/gt
 test/CMakeFiles/runActionTimerTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionTimerTests.dir/build.make test/CMakeFiles/runActionTimerTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=14,15 "Built target runActionTimerTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=13,14 "Built target runActionTimerTests"
 .PHONY : test/CMakeFiles/runActionTimerTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runActionTimerTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runActionTimerTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : test/CMakeFiles/runActionTimerTests.dir/rule
@@ -368,12 +368,12 @@ test/CMakeFiles/runEntityTests.dir/all: googletest/googletest/CMakeFiles/gtest_m
 test/CMakeFiles/runEntityTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runEntityTests.dir/build.make test/CMakeFiles/runEntityTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=25,26 "Built target runEntityTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=24,25 "Built target runEntityTests"
 .PHONY : test/CMakeFiles/runEntityTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runEntityTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runEntityTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : test/CMakeFiles/runEntityTests.dir/rule
@@ -397,12 +397,12 @@ test/CMakeFiles/runCombatantTests.dir/all: googletest/googletest/CMakeFiles/gtes
 test/CMakeFiles/runCombatantTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=23,24 "Built target runCombatantTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=22,23 "Built target runCombatantTests"
 .PHONY : test/CMakeFiles/runCombatantTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runCombatantTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runCombatantTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : test/CMakeFiles/runCombatantTests.dir/rule
@@ -426,12 +426,12 @@ test/CMakeFiles/runActionsTests.dir/all: googletest/googletest/CMakeFiles/gtest_
 test/CMakeFiles/runActionsTests.dir/all: src/CMakeFiles/library.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=16,17 "Built target runActionsTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=15,16 "Built target runActionsTests"
 .PHONY : test/CMakeFiles/runActionsTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runActionsTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runActionsTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles 0
 .PHONY : test/CMakeFiles/runActionsTests.dir/rule

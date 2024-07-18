@@ -43,12 +43,6 @@
 },
 {
   "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
-  "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header  -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o src/CMakeFiles/library.dir/ActionTemplates.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTemplates.cpp",
-  "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTemplates.cpp",
-  "output": "src/CMakeFiles/library.dir/ActionTemplates.cpp.o"
-},
-{
-  "directory": "/Users/mickaelosegueda/Desktop/Project-Cerberus/build",
   "command": "/usr/bin/clang++ -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest  -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestActionTimer.cpp",
   "file": "/Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestActionTimer.cpp",
   "output": "test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o"

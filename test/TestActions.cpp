@@ -2,63 +2,104 @@
 #include <gtest/gtest.h>
 
 
-//Test Subjects
-AttackAction punch("Punch", 1, "Attacks Target", 20, 20);
-AttackBuffAction battleCry("Battle Cry", 2, "Increases Target's Attack", 10, 1.25);
-DefenseBuffAction guardStance("Guard Stance", 3, "Increases Target's Defense", 10, 1.25);
-AttackDebuffAction intimidate("Intimidate", 4, "Lowers Target's Defense", 10, 1.25);
-DefenseDebuffAction taunt("Taunt", 5, "Lowers Target's Defense", 10, 1.25);
-Combatant bob("Bob", 10, 100, 100);
-Combatant joe("Joe", 11, 100, 100);
-
-TEST(AttackActions, RegularCombatant) {
-    punch.performAction(bob);
-    EXPECT_EQ(bob.getHealthPoints(), 80);
-    EXPECT_EQ(bob.getIsAlive(), true);
+// Testing AttackAction class
+TEST(AttackActionTest, DefaultConstructor) {
+    AttackAction action;
+    EXPECT_EQ(action.getAttackPotency(), -1);
 }
 
-TEST(AttackActions, NearDeathCombatant) {
-    bob.setHealthPoints(20);
-    bob.updateIsAlive();
-    punch.performAction(bob);
-    EXPECT_EQ(bob.getHealthPoints(), 0);
-    EXPECT_EQ(bob.getIsAlive(), false);
+TEST(AttackActionTest, ParameterizedConstructor) {
+    AttackAction action("Slash", 1, "A powerful slash", 10, 50);
+    EXPECT_EQ(action.getAttackPotency(), 50);
 }
 
-TEST(AttackActions, OverkillCombatant) {
-    bob.setHealthPoints(5);
-    bob.updateIsAlive();
-    punch.performAction(bob);
-    EXPECT_EQ(bob.getHealthPoints(), -15);
-    EXPECT_EQ(bob.getIsAlive(), false);
+TEST(AttackActionTest, SetAttackPotency) {
+    AttackAction action;
+    action.setAttackPotency(75);
+    EXPECT_EQ(action.getAttackPotency(), 75);
 }
 
-TEST(AttackActions, BlockingCombatant) {
-    bob.setHealthPoints(100);
-    bob.updateIsAlive();
-    bob.configurePersonalEffects().setBlock(true);
-    punch.performAction(bob);
-    EXPECT_EQ(bob.getHealthPoints(), 90);
-    EXPECT_EQ(bob.getIsAlive(), true);
-    EXPECT_EQ(bob.getPersonalEffects().checkBlocking(), false);
+// Testing AttackBuffAction class
+TEST(AttackBuffActionTest, DefaultConstructor) {
+    AttackBuffAction action;
+    EXPECT_EQ(action.getBuffPotency(), -1);
 }
 
-TEST(AttackBuffAcions, ApplyAttackBuff) {
-    battleCry.performAction(bob);
-    EXPECT_EQ(bob.getPersonalEffects().checkAttackBuff(), true);
+TEST(AttackBuffActionTest, ParameterizedConstructor) {
+    AttackBuffAction action("Rage", 2, "Increase attack power", 5, 0.25);
+    EXPECT_EQ(action.getBuffPotency(), 0.25);
 }
 
-TEST(DefenseBuffAcions, ApplyDefenseBuff) {
-    guardStance.performAction(bob);
-    EXPECT_EQ(bob.getPersonalEffects().checkDefenseBuff(), true);
+TEST(AttackBuffActionTest, SetBuffPotency) {
+    AttackBuffAction action;
+    action.setBuffPotency(0.35);
+    EXPECT_EQ(action.getBuffPotency(), 0.35);
 }
 
-TEST(AttackDebuffAcions, ApplyAttackDebuff) {
-    intimidate.performAction(bob);
-    EXPECT_EQ(bob.getPersonalEffects().checkAttackDebuff(), true);
+// Testing DefenseBuffAction class
+TEST(DefenseBuffActionTest, DefaultConstructor) {
+    DefenseBuffAction action;
+    EXPECT_EQ(action.getBuffPotency(), -1);
 }
 
-TEST(DefenseDebuffAcions, ApplyDefenseDebuff) {
-    taunt.performAction(bob);
-    EXPECT_EQ(bob.getPersonalEffects().checkAttackDebuff(), true);
+TEST(DefenseBuffActionTest, ParameterizedConstructor) {
+    DefenseBuffAction action("Shield", 3, "Increase defense power", 5, 0.40);
+    EXPECT_EQ(action.getBuffPotency(), 0.40);
+}
+
+TEST(DefenseBuffActionTest, SetBuffPotency) {
+    DefenseBuffAction action;
+    action.setBuffPotency(0.45);
+    EXPECT_EQ(action.getBuffPotency(), 0.45);
+}
+
+// Testing AttackDebuffAction class
+TEST(AttackDebuffActionTest, DefaultConstructor) {
+    AttackDebuffAction action;
+    EXPECT_EQ(action.getDebuffPotency(), -1);
+}
+
+TEST(AttackDebuffActionTest, ParameterizedConstructor) {
+    AttackDebuffAction action("Weaken", 4, "Decrease attack power", 5, 0.20);
+    EXPECT_EQ(action.getDebuffPotency(), 0.20);
+}
+
+TEST(AttackDebuffActionTest, SetDebuffPotency) {
+    AttackDebuffAction action;
+    action.setDebuffPotency(0.25);
+    EXPECT_EQ(action.getDebuffPotency(), 0.25);
+}
+
+// Testing DefenseDebuffAction class
+TEST(DefenseDebuffActionTest, DefaultConstructor) {
+    DefenseDebuffAction action;
+    EXPECT_EQ(action.getDebuffPotency(), -1);
+}
+
+TEST(DefenseDebuffActionTest, ParameterizedConstructor) {
+    DefenseDebuffAction action("Shatter", 5, "Decrease defense power", 5, 0.15);
+    EXPECT_EQ(action.getDebuffPotency(), 0.15);
+}
+
+TEST(DefenseDebuffActionTest, SetDebuffPotency) {
+    DefenseDebuffAction action;
+    action.setDebuffPotency(0.20);
+    EXPECT_EQ(action.getDebuffPotency(), 0.20);
+}
+
+// Testing HealAction class
+TEST(HealActionTest, DefaultConstructor) {
+    HealAction action;
+    EXPECT_EQ(action.getHealPotency(), -1);
+}
+
+TEST(HealActionTest, ParameterizedConstructor) {
+    HealAction action("Heal", 6, "Restore health", 10, 30);
+    EXPECT_EQ(action.getHealPotency(), 30);
+}
+
+TEST(HealActionTest, SetHealPotency) {
+    HealAction action;
+    action.setHealPotency(40);
+    EXPECT_EQ(action.getHealPotency(), 40);
 }

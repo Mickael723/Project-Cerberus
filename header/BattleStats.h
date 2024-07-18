@@ -2,12 +2,13 @@
 
 class BattleStats {
     private:
-     double attackStrength = 0.0;
-     double incomingDefense = 0.0;
-    public:
-     void setAttackStrength(const double as) {attackStrength = as;}
-     void setIncomingDefense(const double idf) {incomingDefense = idf;}
+     double strength = 0.0;
+     double armor = 0.0;
 
-     double getAttackStrength() const {return attackStrength;}
-     double getIncomingDefense() const {return incomingDefense;}
+    public:
+     void setstrength(const double s) {strength = s;}
+     void setarmour(const double ar) {armor = ar;}
+
+     double getstrength() const {return strength;}
+     double getarmour() const {return armor;}
 };

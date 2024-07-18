@@ -486,13 +486,6 @@ build src/CMakeFiles/library.dir/ActionList.cpp.o: CXX_COMPILER__library_unscann
   OBJECT_DIR = src/CMakeFiles/library.dir
   OBJECT_FILE_DIR = src/CMakeFiles/library.dir
 
-build src/CMakeFiles/library.dir/ActionTemplates.cpp.o: CXX_COMPILER__library_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTemplates.cpp || cmake_object_order_depends_target_library
-  DEP_FILE = src/CMakeFiles/library.dir/ActionTemplates.cpp.o.d
-  FLAGS = -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
-  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header
-  OBJECT_DIR = src/CMakeFiles/library.dir
-  OBJECT_FILE_DIR = src/CMakeFiles/library.dir
-
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target library
@@ -501,7 +494,7 @@ build src/CMakeFiles/library.dir/ActionTemplates.cpp.o: CXX_COMPILER__library_un
 #############################################
 # Link the static library src/liblibrary.a
 
-build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Combatant.cpp.o src/CMakeFiles/library.dir/ActionList.cpp.o src/CMakeFiles/library.dir/ActionTemplates.cpp.o
+build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Combatant.cpp.o src/CMakeFiles/library.dir/ActionList.cpp.o
   ARCH_FLAGS = -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LANGUAGE_COMPILE_FLAGS = -std=c++1y -g -g
   OBJECT_DIR = src/CMakeFiles/library.dir
