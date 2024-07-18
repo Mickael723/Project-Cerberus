@@ -2,7 +2,7 @@
 
 enum EffectType {BLOCKING, ATTACK_UP, ATTACK_DOWN, DEFENSE_UP, DEFENSE_DOWN};
 
-class HumanoidEffects{
+class CombatantEffects{
     private:
      bool isBlocking = false;
      bool isAttackBuff = false;
