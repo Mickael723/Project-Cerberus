@@ -9,6 +9,8 @@ class Combatant : public Entity{
     private:
      int healthPoints;
      int maxHealthPoints;
+     int staminaPoints;
+     int maxStaminaPoints;
      bool inBattle = false;
      bool isAlive = false;
      CombatantEffects personalEffects;
@@ -16,24 +18,24 @@ class Combatant : public Entity{
      ActionList personalActionList;
 
     public:
-     Combatant(std::string name = "", int id = -1, int hp = 0, int maxHp = 0) : Entity(name,id), healthPoints(hp), maxHealthPoints(maxHp) {}
+     Combatant(std::string name = "", int id = -1, int maxHp = 0, int maxStam = 0) : Entity(name,id), healthPoints(maxHp), maxHealthPoints(maxHp), staminaPoints(maxStam), maxStaminaPoints(maxStam) {}
      bool checkIsAlive() {return healthPoints > 0;}
      void updateIsAlive(); // updates the boolean value of isAlive based on checkIsAlive
      CombatantEffects& configurePersonalEffects() {return personalEffects;}
-     // These are hold overs vvvvv
-    //  void constructPersonalTimer(int timerSpeed, int timerDrain, int maxProgress); // constructs personalTimer based on inBattle
-    //  void constructDefaultPersonaltimer();
-    //  void destroyPersonalTimer(); // destroys personalTimer and sets it to nullptr based on inBattle
      
      // getters and setters
      void setHealthPoints(int hp) {healthPoints = hp;}
      void setMaxHealthPoints(int maxHp) {maxHealthPoints = maxHp;}
+     void setStaminaPoints(int stam) {staminaPoints = stam;}
+     void setMaxStaminaPoints(int maxStam) {maxStaminaPoints = maxStam;}
      void setInBattle(bool tf) {inBattle = tf;}
      void setIsAlive(bool tf) {isAlive = tf;}
      void setPersonalActionList(ActionList actionList) {personalActionList = actionList;}
 
      int getHealthPoints() const {return healthPoints;}
      int getMaxHealthPoints() const {return maxHealthPoints;}
+     int getStaminaPoints() const {return staminaPoints;}
+     int getMaxStaminaPoints() const {return maxStaminaPoints;}
      bool getInBattle() const {return inBattle;}
      bool getIsAlive() const {return isAlive;}
      ActionList getPersonalActionList() {return personalActionList;}

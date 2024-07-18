@@ -11,5 +11,5 @@ class Entity {
      void setName(const std::string& n) {name = n;}
      void setID(const int i) {id = i;}
      std::string getName() {return name;}
-     int getID() {return id;}
+     int getID() const {return id;}
 };
