@@ -1,8 +1,7 @@
 #pragma once
 
 #include "Combatant.h"
-
-
+#include <cmath>
 
 class DamageCalculator {
     public:
