@@ -13,6 +13,7 @@ add_executable(runAllTests
   TestEntity.cpp
   TestCombatant.cpp
   TestActions.cpp
+  TestActionList.cpp
 )
 
 add_executable(runActionTimerTests
@@ -31,9 +32,14 @@ add_executable(runActionsTests
   TestActions.cpp
 )
 
+add_executable(runActionListTests
+  TestActionList.cpp
+)
+
 
 target_link_libraries(runAllTests gmock gtest gtest_main library)
 target_link_libraries(runActionTimerTests gmock gtest gtest_main library)
 target_link_libraries(runEntityTests gmock gtest gtest_main library)
 target_link_libraries(runCombatantTests gmock gtest gtest_main library)
 target_link_libraries(runActionsTests gmock gtest gtest_main library)
+target_link_libraries(runActionListTests gmock gtest gtest_main library)

@@ -231,6 +231,47 @@ runActionsTests/fast:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionsTests.dir/build.make test/CMakeFiles/runActionsTests.dir/build
 .PHONY : runActionsTests/fast
 
+# Convenience name for target.
+test/CMakeFiles/runActionListTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runActionListTests.dir/rule
+.PHONY : test/CMakeFiles/runActionListTests.dir/rule
+
+# Convenience name for target.
+runActionListTests: test/CMakeFiles/runActionListTests.dir/rule
+.PHONY : runActionListTests
+
+# fast build rule for target.
+runActionListTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/build
+.PHONY : runActionListTests/fast
+
+TestActionList.o: TestActionList.cpp.o
+.PHONY : TestActionList.o
+
+# target to build an object file
+TestActionList.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionList.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/TestActionList.cpp.o
+.PHONY : TestActionList.cpp.o
+
+TestActionList.i: TestActionList.cpp.i
+.PHONY : TestActionList.i
+
+# target to preprocess a source file
+TestActionList.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionList.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/TestActionList.cpp.i
+.PHONY : TestActionList.cpp.i
+
+TestActionList.s: TestActionList.cpp.s
+.PHONY : TestActionList.s
+
+# target to generate assembly for a file
+TestActionList.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestActionList.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/TestActionList.cpp.s
+.PHONY : TestActionList.cpp.s
+
 TestActionTimer.o: TestActionTimer.cpp.o
 .PHONY : TestActionTimer.o
 
@@ -351,11 +392,15 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... runActionListTests"
 	@echo "... runActionTimerTests"
 	@echo "... runActionsTests"
 	@echo "... runAllTests"
 	@echo "... runCombatantTests"
 	@echo "... runEntityTests"
+	@echo "... TestActionList.o"
+	@echo "... TestActionList.i"
+	@echo "... TestActionList.s"
 	@echo "... TestActionTimer.o"
 	@echo "... TestActionTimer.i"
 	@echo "... TestActionTimer.s"
