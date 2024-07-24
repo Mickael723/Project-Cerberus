@@ -22,6 +22,7 @@ class Combatant : public Entity{
      bool checkIsAlive() {return healthPoints > 0;}
      void updateIsAlive(); // updates the boolean value of isAlive based on checkIsAlive
      CombatantEffects& configurePersonalEffects() {return personalEffects;}
+     BattleStats& configureBattleStats() {return personalStats;}
      
      // getters and setters
      void setHealthPoints(int hp) {healthPoints = hp;}

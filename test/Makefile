@@ -245,6 +245,20 @@ runActionListTests/fast:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/build
 .PHONY : runActionListTests/fast
 
+# Convenience name for target.
+test/CMakeFiles/runDamageCalculatorTests.dir/rule:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/runDamageCalculatorTests.dir/rule
+.PHONY : test/CMakeFiles/runDamageCalculatorTests.dir/rule
+
+# Convenience name for target.
+runDamageCalculatorTests: test/CMakeFiles/runDamageCalculatorTests.dir/rule
+.PHONY : runDamageCalculatorTests
+
+# fast build rule for target.
+runDamageCalculatorTests/fast:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runDamageCalculatorTests.dir/build.make test/CMakeFiles/runDamageCalculatorTests.dir/build
+.PHONY : runDamageCalculatorTests/fast
+
 TestActionList.o: TestActionList.cpp.o
 .PHONY : TestActionList.o
 
@@ -353,6 +367,33 @@ TestCombatant.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runCombatantTests.dir/build.make test/CMakeFiles/runCombatantTests.dir/TestCombatant.cpp.s
 .PHONY : TestCombatant.cpp.s
 
+TestDamageCalculator.o: TestDamageCalculator.cpp.o
+.PHONY : TestDamageCalculator.o
+
+# target to build an object file
+TestDamageCalculator.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.o
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runDamageCalculatorTests.dir/build.make test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.o
+.PHONY : TestDamageCalculator.cpp.o
+
+TestDamageCalculator.i: TestDamageCalculator.cpp.i
+.PHONY : TestDamageCalculator.i
+
+# target to preprocess a source file
+TestDamageCalculator.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.i
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runDamageCalculatorTests.dir/build.make test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.i
+.PHONY : TestDamageCalculator.cpp.i
+
+TestDamageCalculator.s: TestDamageCalculator.cpp.s
+.PHONY : TestDamageCalculator.s
+
+# target to generate assembly for a file
+TestDamageCalculator.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runAllTests.dir/build.make test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.s
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/runDamageCalculatorTests.dir/build.make test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.s
+.PHONY : TestDamageCalculator.cpp.s
+
 TestEntity.o: TestEntity.cpp.o
 .PHONY : TestEntity.o
 
@@ -397,6 +438,7 @@ help:
 	@echo "... runActionsTests"
 	@echo "... runAllTests"
 	@echo "... runCombatantTests"
+	@echo "... runDamageCalculatorTests"
 	@echo "... runEntityTests"
 	@echo "... TestActionList.o"
 	@echo "... TestActionList.i"
@@ -410,6 +452,9 @@ help:
 	@echo "... TestCombatant.o"
 	@echo "... TestCombatant.i"
 	@echo "... TestCombatant.s"
+	@echo "... TestDamageCalculator.o"
+	@echo "... TestDamageCalculator.i"
+	@echo "... TestDamageCalculator.s"
 	@echo "... TestEntity.o"
 	@echo "... TestEntity.i"
 	@echo "... TestEntity.s"

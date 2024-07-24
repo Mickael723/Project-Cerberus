@@ -247,6 +247,30 @@ Combatant.cpp.s:
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/Combatant.cpp.s
 .PHONY : Combatant.cpp.s
 
+DamageCalculator.o: DamageCalculator.cpp.o
+.PHONY : DamageCalculator.o
+
+# target to build an object file
+DamageCalculator.cpp.o:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/DamageCalculator.cpp.o
+.PHONY : DamageCalculator.cpp.o
+
+DamageCalculator.i: DamageCalculator.cpp.i
+.PHONY : DamageCalculator.i
+
+# target to preprocess a source file
+DamageCalculator.cpp.i:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/DamageCalculator.cpp.i
+.PHONY : DamageCalculator.cpp.i
+
+DamageCalculator.s: DamageCalculator.cpp.s
+.PHONY : DamageCalculator.s
+
+# target to generate assembly for a file
+DamageCalculator.cpp.s:
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/library.dir/build.make src/CMakeFiles/library.dir/DamageCalculator.cpp.s
+.PHONY : DamageCalculator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -269,6 +293,9 @@ help:
 	@echo "... Combatant.o"
 	@echo "... Combatant.i"
 	@echo "... Combatant.s"
+	@echo "... DamageCalculator.o"
+	@echo "... DamageCalculator.i"
+	@echo "... DamageCalculator.s"
 .PHONY : help
 
 

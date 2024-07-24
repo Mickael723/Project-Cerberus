@@ -1,6 +1,6 @@
 #include "../header/DamageCalculator.h"
 
-int DamageCalculator::performCalculation(const Combatant& attacker, const Combatant& defender, const int basePotency) {
+double DamageCalculator::performCalculation(const Combatant& attacker, const Combatant& defender, const double basePotency) {
 
     BattleStats attackerStats = attacker.getPersonalStats();
     CombatantEffects attackerEffects = attacker.getPersonalEffects();
@@ -10,7 +10,6 @@ int DamageCalculator::performCalculation(const Combatant& attacker, const Combat
     double attackerStrength = attackerStats.getStrength();
     double defenderArmor = defenderStats.getArmor();
     int attackerLevel = attackerStats.getLevel();
-    int defenderLevel = defenderStats.getLevel();
 
     if (attackerEffects.checkAttackBuff() || attackerEffects.checkAttackDebuff()) {
         attackerStrength *= attackerStats.getModifiedStrengthMultiplier();
@@ -19,11 +18,8 @@ int DamageCalculator::performCalculation(const Combatant& attacker, const Combat
     if (defenderEffects.checkDefenseBuff() || defenderEffects.checkDefenseDebuff()) {
         defenderArmor *= defenderStats.getModifiedArmorMultiplier();
     }
-    
 
-    double result = (((((10*attackerLevel)/5) + 10) * basePotency * (attackerStrength/defenderArmor)) / 50) + 5;
-
+    double result = (((attackerLevel + 1) * (basePotency + attackerStrength)) / defenderArmor) + 5;
     if (defenderEffects.checkBlocking()) {return std::round(result * 0.5);}
-
     return std::round(result);
 }

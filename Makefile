@@ -304,6 +304,19 @@ runActionListTests/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runActionListTests.dir/build.make test/CMakeFiles/runActionListTests.dir/build
 .PHONY : runActionListTests/fast
 
+#=============================================================================
+# Target rules for targets named runDamageCalculatorTests
+
+# Build rule for target.
+runDamageCalculatorTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runDamageCalculatorTests
+.PHONY : runDamageCalculatorTests
+
+# fast build rule for target.
+runDamageCalculatorTests/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/runDamageCalculatorTests.dir/build.make test/CMakeFiles/runDamageCalculatorTests.dir/build
+.PHONY : runDamageCalculatorTests/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +339,7 @@ help:
 	@echo "... runActionsTests"
 	@echo "... runAllTests"
 	@echo "... runCombatantTests"
+	@echo "... runDamageCalculatorTests"
 	@echo "... runEntityTests"
 .PHONY : help
 

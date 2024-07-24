@@ -8,17 +8,6 @@
 // Test fixture for ActionList
 class ActionListTest : public ::testing::Test {
 protected:
-    // void SetUp() override {
-    //     // Code for setting up each test goes here
-    //     action1 = new Action();
-    //     action2 = new Action();
-    // }
-
-    // void TearDown() override {
-    //     // Code for cleaning up after each test goes here
-    //     // delete action1;
-    //     // delete action2;
-    // }
 
     ActionList actionList;
     AttackAction punch = AttackAction("Punch", 15, "Deals Damage to target", 1, 10);

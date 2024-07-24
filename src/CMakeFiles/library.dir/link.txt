@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc liblibrary.a CMakeFiles/library.dir/ActionTimer.cpp.o CMakeFiles/library.dir/Combatant.cpp.o CMakeFiles/library.dir/ActionList.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc liblibrary.a CMakeFiles/library.dir/ActionTimer.cpp.o CMakeFiles/library.dir/Combatant.cpp.o CMakeFiles/library.dir/ActionList.cpp.o CMakeFiles/library.dir/DamageCalculator.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib liblibrary.a

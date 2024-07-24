@@ -111,11 +111,26 @@ src/CMakeFiles/library.dir/ActionList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/library.dir/ActionList.cpp.s"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionList.cpp -o CMakeFiles/library.dir/ActionList.cpp.s
 
+src/CMakeFiles/library.dir/DamageCalculator.cpp.o: src/CMakeFiles/library.dir/flags.make
+src/CMakeFiles/library.dir/DamageCalculator.cpp.o: src/DamageCalculator.cpp
+src/CMakeFiles/library.dir/DamageCalculator.cpp.o: src/CMakeFiles/library.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/library.dir/DamageCalculator.cpp.o"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/library.dir/DamageCalculator.cpp.o -MF CMakeFiles/library.dir/DamageCalculator.cpp.o.d -o CMakeFiles/library.dir/DamageCalculator.cpp.o -c /Users/mickaelosegueda/Desktop/Project-Cerberus/src/DamageCalculator.cpp
+
+src/CMakeFiles/library.dir/DamageCalculator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/library.dir/DamageCalculator.cpp.i"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mickaelosegueda/Desktop/Project-Cerberus/src/DamageCalculator.cpp > CMakeFiles/library.dir/DamageCalculator.cpp.i
+
+src/CMakeFiles/library.dir/DamageCalculator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/library.dir/DamageCalculator.cpp.s"
+	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mickaelosegueda/Desktop/Project-Cerberus/src/DamageCalculator.cpp -o CMakeFiles/library.dir/DamageCalculator.cpp.s
+
 # Object files for target library
 library_OBJECTS = \
 "CMakeFiles/library.dir/ActionTimer.cpp.o" \
 "CMakeFiles/library.dir/Combatant.cpp.o" \
-"CMakeFiles/library.dir/ActionList.cpp.o"
+"CMakeFiles/library.dir/ActionList.cpp.o" \
+"CMakeFiles/library.dir/DamageCalculator.cpp.o"
 
 # External object files for target library
 library_EXTERNAL_OBJECTS =
@@ -123,9 +138,10 @@ library_EXTERNAL_OBJECTS =
 src/liblibrary.a: src/CMakeFiles/library.dir/ActionTimer.cpp.o
 src/liblibrary.a: src/CMakeFiles/library.dir/Combatant.cpp.o
 src/liblibrary.a: src/CMakeFiles/library.dir/ActionList.cpp.o
+src/liblibrary.a: src/CMakeFiles/library.dir/DamageCalculator.cpp.o
 src/liblibrary.a: src/CMakeFiles/library.dir/build.make
 src/liblibrary.a: src/CMakeFiles/library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library liblibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mickaelosegueda/Desktop/Project-Cerberus/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library liblibrary.a"
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && $(CMAKE_COMMAND) -P CMakeFiles/library.dir/cmake_clean_target.cmake
 	cd /Users/mickaelosegueda/Desktop/Project-Cerberus/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/library.dir/link.txt --verbose=$(VERBOSE)
 

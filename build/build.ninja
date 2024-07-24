@@ -486,6 +486,13 @@ build src/CMakeFiles/library.dir/ActionList.cpp.o: CXX_COMPILER__library_unscann
   OBJECT_DIR = src/CMakeFiles/library.dir
   OBJECT_FILE_DIR = src/CMakeFiles/library.dir
 
+build src/CMakeFiles/library.dir/DamageCalculator.cpp.o: CXX_COMPILER__library_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/src/DamageCalculator.cpp || cmake_object_order_depends_target_library
+  DEP_FILE = src/CMakeFiles/library.dir/DamageCalculator.cpp.o.d
+  FLAGS = -std=c++1y -g -g -std=gnu++11 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header
+  OBJECT_DIR = src/CMakeFiles/library.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/library.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target library
@@ -494,7 +501,7 @@ build src/CMakeFiles/library.dir/ActionList.cpp.o: CXX_COMPILER__library_unscann
 #############################################
 # Link the static library src/liblibrary.a
 
-build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Combatant.cpp.o src/CMakeFiles/library.dir/ActionList.cpp.o
+build src/liblibrary.a: CXX_STATIC_LIBRARY_LINKER__library_Debug src/CMakeFiles/library.dir/ActionTimer.cpp.o src/CMakeFiles/library.dir/Combatant.cpp.o src/CMakeFiles/library.dir/ActionList.cpp.o src/CMakeFiles/library.dir/DamageCalculator.cpp.o
   ARCH_FLAGS = -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LANGUAGE_COMPILE_FLAGS = -std=c++1y -g -g
   OBJECT_DIR = src/CMakeFiles/library.dir
@@ -618,6 +625,13 @@ build test/CMakeFiles/runAllTests.dir/TestActionList.cpp.o: CXX_COMPILER__runAll
   OBJECT_DIR = test/CMakeFiles/runAllTests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/runAllTests.dir
 
+build test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.o: CXX_COMPILER__runAllTests_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestDamageCalculator.cpp || cmake_object_order_depends_target_runAllTests
+  DEP_FILE = test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.o.d
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest
+  OBJECT_DIR = test/CMakeFiles/runAllTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runAllTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runAllTests
@@ -626,7 +640,7 @@ build test/CMakeFiles/runAllTests.dir/TestActionList.cpp.o: CXX_COMPILER__runAll
 #############################################
 # Link the executable bin/runAllTests
 
-build bin/runAllTests: CXX_EXECUTABLE_LINKER__runAllTests_Debug test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o test/CMakeFiles/runAllTests.dir/TestActions.cpp.o test/CMakeFiles/runAllTests.dir/TestActionList.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
+build bin/runAllTests: CXX_EXECUTABLE_LINKER__runAllTests_Debug test/CMakeFiles/runAllTests.dir/TestActionTimer.cpp.o test/CMakeFiles/runAllTests.dir/TestEntity.cpp.o test/CMakeFiles/runAllTests.dir/TestCombatant.cpp.o test/CMakeFiles/runAllTests.dir/TestActions.cpp.o test/CMakeFiles/runAllTests.dir/TestActionList.cpp.o test/CMakeFiles/runAllTests.dir/TestDamageCalculator.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
   FLAGS = -std=c++1y -g -std=c++1y -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  lib/libgtest_main.a  src/liblibrary.a  lib/libgtest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
   OBJECT_DIR = test/CMakeFiles/runAllTests.dir
@@ -800,6 +814,39 @@ build bin/runActionListTests: CXX_EXECUTABLE_LINKER__runActionListTests_Debug te
   TARGET_FILE = bin/runActionListTests
   TARGET_PDB = runActionListTests.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target runDamageCalculatorTests
+
+
+#############################################
+# Order-only phony target for runDamageCalculatorTests
+
+build cmake_object_order_depends_target_runDamageCalculatorTests: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_library
+
+build test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.o: CXX_COMPILER__runDamageCalculatorTests_unscanned_Debug /Users/mickaelosegueda/Desktop/Project-Cerberus/test/TestDamageCalculator.cpp || cmake_object_order_depends_target_runDamageCalculatorTests
+  DEP_FILE = test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.o.d
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -std=gnu++14 -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  INCLUDES = -I/Users/mickaelosegueda/Desktop/Project-Cerberus/header -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googlemock -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest/include -isystem /Users/mickaelosegueda/Desktop/Project-Cerberus/googletest/googletest
+  OBJECT_DIR = test/CMakeFiles/runDamageCalculatorTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runDamageCalculatorTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runDamageCalculatorTests
+
+
+#############################################
+# Link the executable bin/runDamageCalculatorTests
+
+build bin/runDamageCalculatorTests: CXX_EXECUTABLE_LINKER__runDamageCalculatorTests_Debug test/CMakeFiles/runDamageCalculatorTests.dir/TestDamageCalculator.cpp.o | lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a lib/libgtest.a /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd || lib/libgmock.a lib/libgtest.a lib/libgtest_main.a src/liblibrary.a
+  FLAGS = -std=c++1y -g -std=c++1y -g -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
+  LINK_LIBRARIES = lib/libgmock.a  lib/libgtest.a  lib/libgtest_main.a  src/liblibrary.a  lib/libgtest.a  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/lib/libm.tbd
+  OBJECT_DIR = test/CMakeFiles/runDamageCalculatorTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/runDamageCalculatorTests
+  TARGET_PDB = runDamageCalculatorTests.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -899,6 +946,8 @@ build runAllTests: phony bin/runAllTests
 
 build runCombatantTests: phony bin/runCombatantTests
 
+build runDamageCalculatorTests: phony bin/runDamageCalculatorTests
+
 build runEntityTests: phony bin/runEntityTests
 
 # =============================================================================
@@ -944,7 +993,7 @@ build src/all: phony src/liblibrary.a
 #############################################
 # Folder: /Users/mickaelosegueda/Desktop/Project-Cerberus/build/test
 
-build test/all: phony bin/runAllTests bin/runActionTimerTests bin/runEntityTests bin/runCombatantTests bin/runActionsTests bin/runActionListTests
+build test/all: phony bin/runAllTests bin/runActionTimerTests bin/runEntityTests bin/runCombatantTests bin/runActionsTests bin/runActionListTests bin/runDamageCalculatorTests
 
 # =============================================================================
 # Built-in targets

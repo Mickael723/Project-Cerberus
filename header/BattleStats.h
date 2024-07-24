@@ -10,7 +10,7 @@ class BattleStats {
      double modifiedArmorMultiplier = 0;
     
     public:
-     BattleStats(const double strength = 0, const double armor = 0, const double level = 0) : strength(strength), armor(armor), level(level) {} 
+     BattleStats(const double strength = 0, const double armor = 0, const int level = 0) : strength(strength), armor(armor), level(level) {} 
      void setStrength(const double s) {strength = s;}
      void setArmor(const double ar) {armor = ar;}
      void setLevel(const int l) {level = l;}

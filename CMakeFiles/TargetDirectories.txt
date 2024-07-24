@@ -39,6 +39,7 @@
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runCombatantTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runActionsTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runActionListTests.dir
+/Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/runDamageCalculatorTests.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/edit_cache.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/rebuild_cache.dir
 /Users/mickaelosegueda/Desktop/Project-Cerberus/test/CMakeFiles/list_install_components.dir

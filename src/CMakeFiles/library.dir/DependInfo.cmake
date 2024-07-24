@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionList.cpp" "src/CMakeFiles/library.dir/ActionList.cpp.o" "gcc" "src/CMakeFiles/library.dir/ActionList.cpp.o.d"
   "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/ActionTimer.cpp" "src/CMakeFiles/library.dir/ActionTimer.cpp.o" "gcc" "src/CMakeFiles/library.dir/ActionTimer.cpp.o.d"
   "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/Combatant.cpp" "src/CMakeFiles/library.dir/Combatant.cpp.o" "gcc" "src/CMakeFiles/library.dir/Combatant.cpp.o.d"
+  "/Users/mickaelosegueda/Desktop/Project-Cerberus/src/DamageCalculator.cpp" "src/CMakeFiles/library.dir/DamageCalculator.cpp.o" "gcc" "src/CMakeFiles/library.dir/DamageCalculator.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

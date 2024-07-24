@@ -2,6 +2,7 @@ add_library(library
     ActionTimer.cpp
     Combatant.cpp
     ActionList.cpp
+    DamageCalculator.cpp
 )
 
 find_library(M_LIB m)
