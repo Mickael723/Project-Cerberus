@@ -1,5 +1,11 @@
 #include "../header/BattleEvent.h"
 
+void BattleEvent::determineAction(Combatant& user, Combatant& target, Action* action) {
+    if (action->getActionCategory() == ATTACK) {
+        AttackAction* foundAction = dynamic_cast<AttackAction*>(action);
+        useCombatantAttackAction(user, target, foundAction->getAttackPotency());
+    }
+}
 void BattleEvent::useCombatantAttackAction(Combatant& user, Combatant& target, const int attackPotency) {
     target.setHealthPoints(target.getHealthPoints() - DamageCalculator::performCalculation(user, target, attackPotency));
     target.updateIsAlive();

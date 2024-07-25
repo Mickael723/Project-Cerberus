@@ -4,6 +4,7 @@
 
 class BattleEvent {
     public:
+     static void determineAction(Combatant& user, Combatant& target, Action* action);
      static void useCombatantAttackAction(Combatant& user, Combatant& target, const int attackActionPotency);
      static void useCombatantAttackBuffAction(Combatant& reciever, const double buffPotency);
      static void useCombatantDefenseBuffAction(Combatant& reciever, const double buffPotency);

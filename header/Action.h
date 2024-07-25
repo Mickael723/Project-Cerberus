@@ -13,6 +13,7 @@ class Action : public Entity {
      //getters and setters
      Action(const std::string& name = "", const int id = -1, const ACTION_CATEGORY actionCategory = UNKNOWN, const std::string& description = "", const int staminaCost = -1) 
      : Entity(name, id), actionCategory(actionCategory), description(description), staminaCost(staminaCost) {}
+     virtual ~Action() {}
      bool operator==(const Action& other) const {
         return getID() == other.getID();
      }
