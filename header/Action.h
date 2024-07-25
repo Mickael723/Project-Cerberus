@@ -21,8 +21,8 @@ class Action : public Entity {
      void setDescription(std::string description) {this->description = description;}
      void setStaminaCost(const int staminaCost) {this->staminaCost = staminaCost;}
 
-     ACTION_CATEGORY getActionCategory() {return actionCategory;}
-     std::string getDescription() {return description;}
+     ACTION_CATEGORY getActionCategory() const {return actionCategory;}
+     std::string getDescription() const {return description;}
      int getStaminaCost() const {return staminaCost;}
 
 };
