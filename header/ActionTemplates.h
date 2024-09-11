@@ -21,7 +21,7 @@ class AttackBuffAction : public Action {
      double buffPotency;
     public:
      AttackBuffAction(std::string name = "", const int id = -1, std::string description = "", const int staminaCost = -1, const double buffPotency = -1)
-     : Action(name, id, BUFF, description, staminaCost), buffPotency(buffPotency) {}
+     : Action(name, id, ATK_BUFF, description, staminaCost), buffPotency(buffPotency) {}
      bool operator==(const AttackBuffAction& other) const {
         return getID() == other.getID();
      }
@@ -35,7 +35,7 @@ class DefenseBuffAction : public Action {
      double buffPotency;
     public:
      DefenseBuffAction(std::string name = "", const int id = -1, std::string description = "", const int staminaCost = -1, const double buffPotency = -1)
-     : Action(name, id, BUFF, description, staminaCost), buffPotency(buffPotency) {}
+     : Action(name, id, DEF_BUFF, description, staminaCost), buffPotency(buffPotency) {}
      bool operator==(const DefenseBuffAction& other) const {
         return getID() == other.getID();
      }
@@ -49,7 +49,7 @@ class AttackDebuffAction : public Action {
      double debuffPotency;
     public:
      AttackDebuffAction(std::string name = "", const int id = -1, std::string description = "", const int staminaCost = -1, const double debuffPotency = -1)
-     : Action(name, id, DEBUFF, description, staminaCost), debuffPotency(debuffPotency) {}
+     : Action(name, id, ATK_DEBUFF, description, staminaCost), debuffPotency(debuffPotency) {}
      bool operator==(const AttackDebuffAction& other) const {
         return getID() == other.getID();
      }
@@ -63,7 +63,7 @@ class DefenseDebuffAction : public Action {
      double debuffPotency;
     public:
      DefenseDebuffAction(std::string name = "", const int id = -1, std::string description = "", const int staminaCost = -1, const double debuffPotency = -1)
-     : Action(name, id, DEBUFF, description, staminaCost), debuffPotency(debuffPotency) {}
+     : Action(name, id, DEF_DEBUFF, description, staminaCost), debuffPotency(debuffPotency) {}
      bool operator==(const DefenseDebuffAction& other) const {
         return getID() == other.getID();
      }

@@ -2,7 +2,7 @@
 
 #include "Entity.h"
 
-enum ACTION_CATEGORY {ATTACK, DEFEND, BUFF, DEBUFF, HEAL, UNKNOWN};
+enum ACTION_CATEGORY {ATTACK, DEFEND, ATK_BUFF, DEF_BUFF, ATK_DEBUFF, DEF_DEBUFF, HEAL, UNKNOWN};
 
 class Action : public Entity {
     private:
